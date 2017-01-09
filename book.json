@@ -1,0 +1,21 @@
+{
+    "plugins": [
+        "versions"
+    ],
+    "pluginsConfig": {
+        "versions": {
+            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json",
+            "options": [
+                {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html",
+                    "text": "latest"
+                },
+                {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html",
+                    "text": "-- select version --",
+                    "selected": false
+                }
+            ]
+        }
+    }
+}
