@@ -1,4 +1,15 @@
 # Summary
 
-* [Introduction](README.md)
-* [Getting Started](getting-started.md)
+* [Technologies](README.md)
+* [Installation](getting-started.md)
+* [Outline](outline.md)
+* [ER Diagram](erd.md)
+* [Sequence Diagrams](sd.md)
+  * [Login](login.md)
+  * [getNearbyUsers](getNearbyUsers.md)
+  * [saveVote](saveVote.md)
+  * [fetchMatches](fetchMatches.md)
+* [Routes](routes.md)
+  * [User](user.md)
+    * [Get Nearby Users](getNearbyUsersRoute.md)
+  * [Auth](auth.md)
