@@ -1,24 +1,31 @@
-#### Get Nearby Users’ Details Route:
+#### Save Vote Route:
 
-###### API Path: api/users/getNearbyUsers?radius=${radius}
+###### API Path: api/users/saveVote
 
-###### Method: GET
+###### Method: POST
 
 #### Description:
-  - ###### This is a protected route which gets the nearby users’ details after verifying JWT access token which is provided in the header.
+  - ###### This is a protected route which saves the vote in database.
 
 #### Parameters:
   * ###### Name: req
     ###### Type: Object
+
+| Name          | Type   |
+| ------------- |:------:|
+| targetId      | String |
+| target        | String |
+| isLiked       | String |
+
   * ###### Name: jwtAccessToken
     ###### Type: String
     ###### Inside: Header
     ###### Description: JWT access token is used to check the authenticity of the user.
+
   * ###### Name: res
     ###### Type: Object
-    ###### Description: res is nothing but the response object which gets you the nearby users’ details.
     ###### Http Code: 200
-    ###### Name: nearbyUser
+    ###### Name: returnObj
 
 | Name          | Type    |
 | ------------- |:------: |

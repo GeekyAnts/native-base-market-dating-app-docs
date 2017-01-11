@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ER Diagram · GitBook</title>
+        <title>Register User Route · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="sd.html" />
+    <link rel="next" href="getNearbyUsersRoute.html" />
     
     
-    <link rel="prev" href="outline.html" />
+    <link rel="prev" href="user.html" />
     
 
     </head>
@@ -132,7 +132,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="erd.html">
+        <li class="chapter " data-level="1.4" data-path="erd.html">
             
                 <a href="erd.html">
             
@@ -244,7 +244,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1.1" data-path="registerUserRoute.html">
+        <li class="chapter active" data-level="1.6.1.1" data-path="registerUserRoute.html">
             
                 <a href="registerUserRoute.html">
             
@@ -394,7 +394,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >ER Diagram</a>
+        <a href="." >Register User Route</a>
     </h1>
 </div>
 
@@ -409,20 +409,91 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="er-diagram">ER Diagram</h1>
-<h6 id="an-entity-relationship-diagram-erd-is-a-visual-representation-of-different-data-using-conventions-that-describe-how-these-data-are-related-to-each-other">An Entity Relationship Diagram (ERD) is a visual representation of different data using conventions that describe how these data are related to each other.</h6>
-<h6 id="in-the-given-er-diagram-the-elements-inside-rectangles-are-called-entities-while-the-items-inside-diamonds-denote-the-relationships-between-entities">In the given ER diagram, the elements inside rectangles are called entities while the items inside diamonds denote the relationships between entities.</h6>
+                                <h4 id="registration-route">Registration Route:</h4>
+<h6 id="api-path-apiusersregister">API Path: api/users/register</h6>
+<h6 id="method-post">Method: POST</h6>
+<h4 id="description">Description:</h4>
 <ul>
-<li><strong>Entity</strong>: An entity can be a person, place, event, or object that is relevant to a given system. Entities are represented in ER diagrams by a rectangle and named using singular nouns.</li>
-<li><strong>Relationship</strong>: A relationship describes how entities interact. Relationships are represented by diamond shapes and are labeled using verbs.</li>
-<li><strong>Cardinality</strong>: Cardinality is the number of instance of an entity from a relation that can be associated with the relation.<ul>
-<li><strong>One-to-one</strong>: When only one instance of an entity is associated with the relationship, it is marked as <strong>1:1</strong>.</li>
-<li><strong>One-to-many</strong>: When more than one instance of an entity is associated with a relationship, it is marked as <strong>1:N</strong>.</li>
-<li><strong>Many-to-one</strong>: When more than one instance of an entity is associated with the relationship, it is marked as <strong>N:1</strong>.</li>
-</ul>
+<li><h6 id="register-route-is-used-to-register-a-new-user">Register route is used to register a new user.</h6>
+</li>
+<li><h6 id="this-route-also-checks-whether-a-user-has-already-been-registered-or-not-if-not-the-image-of-the-profile-pic-of-the-user-is-stored-on-cloud-using-cloudinary-and-the-user-is-saved-in-the-database">This route also checks whether a user has already been registered or not; if not, the image of the profile pic of the user is stored on cloud using &#x201C;Cloudinary&#x201D; and the user is saved in the database.</h6>
 </li>
 </ul>
-<p><img src="images/ER_DatingApp.png" alt="ER_DatingApp figure"></p>
+<h4 id="parameters">Parameters:</h4>
+<ul>
+<li><h6 id="name-req">Name: req</h6>
+<h6 id="type-object">Type: Object</h6>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td>name</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td>first_name</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td>picture</td>
+<td style="text-align:center">Object</td>
+</tr>
+<tr>
+<td>loc</td>
+<td style="text-align:center">Object</td>
+</tr>
+<tr>
+<td>gender</td>
+<td style="text-align:center">Number</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><h6 id="name-res">Name: res</h6>
+<h6 id="type-object">Type: Object</h6>
+<h6 id="http-code-200">Http Code: 200</h6>
+<h6 id="name-returnobj">Name: returnObj</h6>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td style="text-align:center">boolean</td>
+</tr>
+<tr>
+<td>message</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td>data</td>
+<td style="text-align:center">Object</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response-res-">Response( res ):</h4>
+<h6 id="returns-an-object-with-three-properties-success-bool-message-datathe-third-parameter-data-is-an-object-with-two-properties-jwtaccesstoken-and-user-object">Returns an object with three properties: success (bool), message, data.The third parameter data is an object with two properties: jwtAccessToken and user object.</h6>
 
                                 
                                 </section>
@@ -450,12 +521,12 @@
 
             
                 
-                <a href="outline.html" class="navigation navigation-prev " aria-label="Previous page: Outline">
+                <a href="user.html" class="navigation navigation-prev " aria-label="Previous page: User">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="sd.html" class="navigation navigation-next " aria-label="Next page: Sequence Diagrams">
+                <a href="getNearbyUsersRoute.html" class="navigation navigation-next " aria-label="Next page: Get Nearby Users Route">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -466,7 +537,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ER Diagram","level":"1.4","depth":1,"next":{"title":"Sequence Diagrams","level":"1.5","depth":1,"path":"sd.md","ref":"sd.md","articles":[{"title":"Login","level":"1.5.1","depth":2,"path":"login.md","ref":"login.md","articles":[]},{"title":"getNearbyUsers","level":"1.5.2","depth":2,"path":"getNearbyUsers.md","ref":"getNearbyUsers.md","articles":[]},{"title":"saveVote","level":"1.5.3","depth":2,"path":"saveVote.md","ref":"saveVote.md","articles":[]},{"title":"fetchMatches","level":"1.5.4","depth":2,"path":"fetchMatches.md","ref":"fetchMatches.md","articles":[]}]},"previous":{"title":"Outline","level":"1.3","depth":1,"path":"outline.md","ref":"outline.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","livereload"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"erd.md","mtime":"2017-01-10T11:09:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-11T06:18:16.974Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Register User Route","level":"1.6.1.1","depth":3,"next":{"title":"Get Nearby Users Route","level":"1.6.1.2","depth":3,"path":"getNearbyUsersRoute.md","ref":"getNearbyUsersRoute.md","articles":[]},"previous":{"title":"User","level":"1.6.1","depth":2,"path":"user.md","ref":"user.md","articles":[{"title":"Register User Route","level":"1.6.1.1","depth":3,"path":"registerUserRoute.md","ref":"registerUserRoute.md","articles":[]},{"title":"Get Nearby Users Route","level":"1.6.1.2","depth":3,"path":"getNearbyUsersRoute.md","ref":"getNearbyUsersRoute.md","articles":[]},{"title":"Save Vote Route","level":"1.6.1.3","depth":3,"path":"saveVoteRoute.md","ref":"saveVoteRoute.md","articles":[]},{"title":"Create Matches Route","level":"1.6.1.4","depth":3,"path":"createMatchesRoute.md","ref":"createMatchesRoute.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","livereload"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"registerUserRoute.md","mtime":"2017-01-11T07:02:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-11T06:18:16.974Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
