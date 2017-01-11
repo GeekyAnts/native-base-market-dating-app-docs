@@ -1,3 +1,3 @@
 # getNearbyUsers
 
-<img src="./images/getNearbyUsers.png" width="1000" height="400" />
+![getNearbyUsers figure](./images/getNearbyUsers.png)

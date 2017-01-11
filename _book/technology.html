@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Register User Route · GitBook</title>
+        <title>Technologies · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="getNearbyUsersRoute.html" />
+    <link rel="next" href="getting-started.html" />
     
     
-    <link rel="prev" href="user.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -106,7 +106,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="technology.html">
+        <li class="chapter active" data-level="1.2" data-path="technology.html">
             
                 <a href="technology.html">
             
@@ -257,7 +257,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1.1" data-path="registerUserRoute.html">
+        <li class="chapter " data-level="1.7.1.1" data-path="registerUserRoute.html">
             
                 <a href="registerUserRoute.html">
             
@@ -407,7 +407,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Register User Route</a>
+        <a href="." >Technologies</a>
     </h1>
 </div>
 
@@ -422,89 +422,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="registration-route">Registration Route:</h4>
-<p>API Path: api/users/register</p>
-<p>Method: POST</p>
-<h4 id="description">Description:</h4>
+                                <h1 id="technologies-used">Technologies Used</h1>
+<p> The Backend process of React Native Dating App Backend are built using the core components of Node, Express, MongoDB, SocketIO. Dating App has also been constantly incorporating various other latest technologies.</p>
 <ul>
-<li>Register route is used to register a new user.</li>
-<li>This route also checks whether a user has already been registered or not; if not, the image of the profile pic of the user is stored on cloud using &#x201C;Cloudinary&#x201D; and the user is saved in the database.</li>
+<li>Node JS</li>
+<li>Express JS</li>
+<li>MongoDB</li>
+<li>SocketIO</li>
+<li>Passport JS</li>
+<li>Bcrypt</li>
+<li>Mocha</li>
+<li>Chai</li>
 </ul>
-<h4 id="parameters">Parameters:</h4>
-<ul>
-<li><p>Name: req</p>
-<p>Type: Object</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th style="text-align:center">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>email</td>
-<td style="text-align:center">String</td>
-</tr>
-<tr>
-<td>name</td>
-<td style="text-align:center">String</td>
-</tr>
-<tr>
-<td>first_name</td>
-<td style="text-align:center">String</td>
-</tr>
-<tr>
-<td>last_name</td>
-<td style="text-align:center">String</td>
-</tr>
-<tr>
-<td>picture</td>
-<td style="text-align:center">Object</td>
-</tr>
-<tr>
-<td>loc</td>
-<td style="text-align:center">Object</td>
-</tr>
-<tr>
-<td>gender</td>
-<td style="text-align:center">Number</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p>Name: res</p>
-<p>Type: Object</p>
-<p>Http Code: 200</p>
-<p>Name: returnObj</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th style="text-align:center">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>success</td>
-<td style="text-align:center">boolean</td>
-</tr>
-<tr>
-<td>message</td>
-<td style="text-align:center">String</td>
-</tr>
-<tr>
-<td>data</td>
-<td style="text-align:center">Object</td>
-</tr>
-</tbody>
-</table>
-<h4 id="response-res-">Response( res ):</h4>
-<p>Returns an object with three properties: success (bool), message, data.The third parameter data is an object with two properties: jwtAccessToken and user object.</p>
+<h3 id="node-js">Node JS:</h3>
+<p> Node JS is a packaged compilation of Google&#x2019;s V8 JavaScript engine, the libuv platform abstraction layer, and a core library, which is itself primarily written in JavaScript. Node JS shines in real-time web applications employing push technology over websockets. The main principle of Node JS: use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices. It replaces the traditional request-response paradigm with a fast, two-way communication model. It is asynchronous without the use of threads, it is not memory-intensive. Node JS websockets run on TCP, not HTTP, so low-overhead client-server communication is enabled in both directions. Ideally, if you are writing a mobile app, you want to cover all the bases &#x2013; iOS, Android and Windows &#x2013; in order to obtain maximum market share or to grant your mobile workforce flexibility in device choice. A straightforward way to accomplish that is to write all the app&#x2019;s logic in Node JS and place it on the backend. The user interface then runs on the mobile device under another language.</p>
+<h3 id="express-js">Express JS:</h3>
+<p> Express JS is server-side and mobile application framework, written in JavaScript. It builds single-page, multi-page, and hybrid mobile and web apps; Common back-end functions for web applications; APIs. Express JS is a prebuilt Node JS framework that can help you in creating server-side web applications faster and smarter. Simplicity, minimalism, flexibility, scalability are some of its characteristics and since it is made in Node JS itself, it inherited its performance as well. In short, Express JS did for Node JS what Bootstrap did for HTML/CSS and responsive web design. It made coding in Node JS a piece of cake and gave programmers some additional features to extend their server-side coding. Express JS is hands down the most famous Node JS framework - so much so that when most people talk about Node JS they surely mean Node JS + Express JS.</p>
+<h3 id="mongodb">MongoDB:</h3>
+<p> MongoDB is a document-oriented database designed with both scalability and developer agility in mind. MongoDB&apos;s ability to store JavaScript objects natively saves time and processing power. Rather than storing your data in tables and rows as you would with a relational database, in MongoDB you store JSON-like documents with dynamic schemas. Instead of a domain-specific language like SQL, MongoDB utilizes a simple JavaScript interface for querying. Looking up a document is as simple as passing a JavaScript object that partially describes the search target.</p>
+<h3 id="json-web-token">JSON Web Token:</h3>
+<p> JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA.</p>
+<h3 id="cloudinary">Cloudinary:</h3>
+<p> It&#x2019;s a comprehensive cloud-based image management solution.</p>
 
                                 
                                 </section>
@@ -532,12 +471,12 @@
 
             
                 
-                <a href="user.html" class="navigation navigation-prev " aria-label="Previous page: User">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="getNearbyUsersRoute.html" class="navigation navigation-next " aria-label="Next page: Get Nearby Users Route">
+                <a href="getting-started.html" class="navigation navigation-next " aria-label="Next page: Installation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -548,7 +487,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Register User Route","level":"1.7.1.1","depth":3,"next":{"title":"Get Nearby Users Route","level":"1.7.1.2","depth":3,"path":"getNearbyUsersRoute.md","ref":"getNearbyUsersRoute.md","articles":[]},"previous":{"title":"User","level":"1.7.1","depth":2,"path":"user.md","ref":"user.md","articles":[{"title":"Register User Route","level":"1.7.1.1","depth":3,"path":"registerUserRoute.md","ref":"registerUserRoute.md","articles":[]},{"title":"Get Nearby Users Route","level":"1.7.1.2","depth":3,"path":"getNearbyUsersRoute.md","ref":"getNearbyUsersRoute.md","articles":[]},{"title":"Save Vote Route","level":"1.7.1.3","depth":3,"path":"saveVoteRoute.md","ref":"saveVoteRoute.md","articles":[]},{"title":"Create Matches Route","level":"1.7.1.4","depth":3,"path":"createMatchesRoute.md","ref":"createMatchesRoute.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"registerUserRoute.md","mtime":"2017-01-11T13:01:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-11T13:08:26.342Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Technologies","level":"1.2","depth":1,"next":{"title":"Installation","level":"1.3","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"technology.md","mtime":"2017-01-11T12:48:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-11T13:08:26.342Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

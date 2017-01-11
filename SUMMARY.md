@@ -1,6 +1,6 @@
 # Summary
 
-* [Technologies](README.md)
+* [Technologies](technology.md)
 * [Installation](getting-started.md)
 * [Outline](outline.md)
 * [ER Diagram](erd.md)

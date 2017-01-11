@@ -1,7 +1,7 @@
 # ER Diagram
 
-###### An Entity Relationship Diagram (ERD) is a visual representation of different data using conventions that describe how these data are related to each other.
-###### In the given ER diagram, the elements inside rectangles are called entities while the items inside diamonds denote the relationships between entities.
+An Entity Relationship Diagram (ERD) is a visual representation of different data using conventions that describe how these data are related to each other.
+In the given ER diagram, the elements inside rectangles are called entities while the items inside diamonds denote the relationships between entities.
 
 * **Entity**: An entity can be a person, place, event, or object that is relevant to a given system. Entities are represented in ER diagrams by a rectangle and named using singular nouns.
 * **Relationship**: A relationship describes how entities interact. Relationships are represented by diamond shapes and are labeled using verbs.
