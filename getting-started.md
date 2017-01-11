@@ -3,7 +3,7 @@
 ### System Requirements:
 * ###### Globally installed [node](https://nodejs.org/en/) >= 6.3.1
 * ###### Globally installed [npm](https://www.npmjs.com/) >= 3.10.3
-* ###### Globally installed [mongodb](https://docs.mongodb.com/)
+* ###### Globally installed [mongodb](https://docs.mongodb.com/) >= 2.6.12
 
 ### Installation:
 
