@@ -44,7 +44,7 @@ API not found, internal server error, parameter validation error.
 
 #### Passport JS:
 
-This module lets you authenticate endpoints using a JSON web token and passport-jwt. A passport middleware is added to all the routes and socket which will check for authorised token. We can also change the strategy of the passport in the passport-config.js file.
+This module lets you authenticate endpoints using a JSON web token and passport-jwt. A passport middleware is added to all the routes and sockets which will check for authorised token. We can also change the strategy of the passport in the passport-config.js file.
 
 #### Api Routes:
 
