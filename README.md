@@ -6,4 +6,4 @@ The ideal starter kit / app script with all the needed UI elements alongwith:
   * CodePush and
   * Backend integration (Express, Node, MongoDB and Cloudinary) to build your iOS and Android dating app
 
-[Click here](https://strapmobile.com/react-native-dating-app-theme-backend/) to know more.
+[Click here](https://market.nativebase.io/view/react-native-dating-app-with-backend) to know more.
