@@ -1,18 +1,28 @@
 {
     "title": "Dating App Docs",
     "plugins": [
-        "versions"
+        "versions",
+        "edit-link",
+        "toggle-chapters"
     ],
     "pluginsConfig": {
+         "edit-link": {
+            "base": "https://github.com/GeekyAnts/native-base-market-dating-app-docs/master",
+            "label": "Edit This Page"
+        },
         "versions": {
-            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/book.json",
+            "gitbookConfigURL": "http://docs.market.nativebase.io/react-native-dating-app-with-backend/",
             "options": [
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html",
+                    "value": "http://docs.market.nativebase.io/react-native-dating-app-with-backend/",
                     "text": "latest"
                 },
+                 {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/V1.0.0/_book/index.html",
+                    "text": "v1.0.0"
+                },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-market-dating-app-docs/master/_book/index.html",
+                    "value": "http://docs.market.nativebase.io/react-native-dating-app-with-backend/",
                     "text": "-- select version --",
                     "selected": false
                 }
