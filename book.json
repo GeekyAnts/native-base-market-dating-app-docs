@@ -7,7 +7,7 @@
     ],
     "pluginsConfig": {
          "edit-link": {
-            "base": "https://github.com/GeekyAnts/native-base-market-dating-app-docs/master",
+            "base": "https://github.com/GeekyAnts/native-base-market-dating-app-docs/tree/master",
             "label": "Edit This Page"
         },
         "versions": {
