@@ -2,8 +2,8 @@
 
 #### System Requirements:
 *  Globally installed [node](https://nodejs.org/en/) >= 6.3.1
-*  Globally installed [npm](https://www.npmjs.com/) >= 3.10.3
-*  Globally installed [mongodb](https://docs.mongodb.com/) >= 2.6.12
+*  Globally installed [npm](https://www.npmjs.com/) >= 4
+*  Globally installed [mongodb](https://docs.mongodb.com/) >= 3.4.1
 
 #### Installation:
 
@@ -32,3 +32,13 @@
 ```
 [user@localhost] $ | npm start
 ```
+####Note: 
+
+* **To extract files in Windows**:<br>
+• Unzip the file.<br>
+• Right click on the extracted file and select <b>View files</b>.
+  All the files will be extracted.<br />
+  <b>We don't provide support for Windows. It's completely buyer's responsibility.</b>
+
+* **Ejecting from CRNA to get regular React Native app**:<br>
+  Ejecting from CRNA to regular React Native app can be performed referring this <a href="https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md">link</a>.
